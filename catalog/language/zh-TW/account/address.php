@@ -12,18 +12,18 @@ $_['text_delete']       = '您的地址已刪除';
 $_['text_empty']           = '您的帳戶沒有地址。';
 
 // Entry
-$_['entry_firstname']   = '您的名字：';
-$_['entry_lastname']    = '您的姓氏：';
-$_['entry_company']     = '公司名稱：';
-$_['entry_company_id']  = '公司註冊號：';
-$_['entry_tax_id']      = '公司統編：';
-$_['entry_address_1']   = '地址 (1)：';
-$_['entry_address_2']   = '地址 (2)：';
-$_['entry_postcode']    = '郵遞區號：';
-$_['entry_city']        = '所在縣市：';
-$_['entry_country']     = '所在國家：';
-$_['entry_zone']        = '地區/省份：';
-$_['entry_default']     = '預設地址：';
+$_['entry_firstname']   = '姓氏';
+$_['entry_lastname']    = '名字';
+$_['entry_company']     = '公司名稱';
+$_['entry_company_id']  = '公司註冊號';
+$_['entry_tax_id']      = '公司統編';
+$_['entry_address_1']   = '地址';
+$_['entry_address_2']   = '地址 (2)：'; //[已移除]
+$_['entry_postcode']    = '郵遞區號：'; //[已移除]
+$_['entry_city']        = '所在縣市：'; //[已移除]
+$_['entry_country']     = '縣市';
+$_['entry_zone']        = '鄉鎮';
+$_['entry_default']     = '預設地址';
 
 // Error
 $_['error_delete']      = '警告： 您必須填寫至少一個地址！';
