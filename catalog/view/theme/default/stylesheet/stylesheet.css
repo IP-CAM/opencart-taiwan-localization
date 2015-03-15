@@ -703,3 +703,8 @@ h2.price {
        width: 100%;
     }
 }
+
+/*	新增		*/
+.hide {
+	display: none;
+}

@@ -50,28 +50,28 @@ $_['column_price']                   = '價格';
 $_['column_total']                   = '合計';
 
 // Entry
-$_['entry_email_address']            = '郵件地址：';
-$_['entry_email']                    = 'E-Mail：';
-$_['entry_password']                 = '密碼：';
-$_['entry_confirm']                  = '確認密碼：';
-$_['entry_firstname']                = '您的名字：';
-$_['entry_lastname']                 = '您的姓氏：';
-$_['entry_telephone']                = '電話：';
-$_['entry_fax']                      = '傳真：';
+$_['entry_email_address']            = '郵件地址';
+$_['entry_email']                    = 'E-Mail';
+$_['entry_password']                 = '密碼';
+$_['entry_confirm']                  = '確認密碼';
+$_['entry_firstname']                = '您的名字';
+$_['entry_lastname']                 = '您的姓氏';
+$_['entry_telephone']                = '電話';
+$_['entry_fax']                      = '傳真';
 $_['entry_address']                  = '選擇地址';
-$_['entry_company']                  = '&nbsp;&nbsp;&nbsp;公司名稱：';
+$_['entry_company']                  = '公司名稱';
 $_['entry_customer_group']           = '企業類型:';
-$_['entry_address_1']                = '地址 1：';
-$_['entry_address_2']                = '&nbsp;&nbsp;&nbsp;地址 2：';
-$_['entry_postcode']                 = '郵遞區號：';
-$_['entry_city']                     = '縣市：';
-$_['entry_country']                  = '國家：';
-$_['entry_zone']                     = '地區 / 省份：';
+$_['entry_address_1']                = '地址';
+$_['entry_address_2']                = '&nbsp;&nbsp;&nbsp;地址 2：'; // disable
+$_['entry_postcode']                 = '郵遞區號：'; // disable
+$_['entry_city']                     = '縣市：'; // disable
+$_['entry_country']                  = '縣市';
+$_['entry_zone']                     = '鄉鎮';
 $_['entry_newsletter']               = '我希望訂閱 %s 資訊。';
 $_['entry_shipping'] 	             = '我的運送地址和帳單地址相同。';
-$_['entry_account']                  = '帳號:';
-$_['entry_company_id']               = '公司註冊號:';
-$_['entry_tax_id']                   = '公司統編:';
+$_['entry_account']                  = '帳號';
+$_['entry_company_id']               = '公司註冊號';
+$_['entry_tax_id']                   = '公司統編';
 
 // Error
 $_['error_warning']                  = '在結算時出現了問題！ 如果此問題繼續存在請使用其它支付方式或<a href="%s">連絡我們</a>。';

@@ -17,6 +17,21 @@
       <input type="text" name="company" value="<?php echo $company; ?>" placeholder="<?php echo $entry_company; ?>" id="input-shipping-company" class="form-control" />
     </div>
   </div>
+    <div class="form-group required">
+    <label class="col-sm-2 control-label" for="input-shipping-country"><?php echo $entry_country; ?></label>
+    <div class="col-sm-10">
+      <select name="country_id" id="input-shipping-country" class="form-control">
+        <option value=""><?php echo $text_select; ?></option>
+        <?php foreach ($countries as $country) { ?>
+        <?php if ($country['country_id'] == $country_id) { ?>
+        <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
+        <?php } else { ?>
+        <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
+        <?php } ?>
+        <?php } ?>
+      </select>
+    </div>
+  </div>
   <div class="form-group required">
     <label class="col-sm-2 control-label" for="input-shipping-address-1"><?php echo $entry_address_1; ?></label>
     <div class="col-sm-10">
@@ -39,21 +54,6 @@
     <label class="col-sm-2 control-label" for="input-shipping-postcode"><?php echo $entry_postcode; ?></label>
     <div class="col-sm-10">
       <input type="text" name="postcode" value="<?php echo $postcode; ?>" placeholder="<?php echo $entry_postcode; ?>" id="input-shipping-postcode" class="form-control" />
-    </div>
-  </div>
-  <div class="form-group required">
-    <label class="col-sm-2 control-label" for="input-shipping-country"><?php echo $entry_country; ?></label>
-    <div class="col-sm-10">
-      <select name="country_id" id="input-shipping-country" class="form-control">
-        <option value=""><?php echo $text_select; ?></option>
-        <?php foreach ($countries as $country) { ?>
-        <?php if ($country['country_id'] == $country_id) { ?>
-        <option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-        <?php } else { ?>
-        <option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-        <?php } ?>
-        <?php } ?>
-      </select>
     </div>
   </div>
   <div class="form-group required">
@@ -319,4 +319,8 @@ $('#collapse-shipping-address select[name=\'country_id\']').on('change', functio
 });
 
 $('#collapse-shipping-address select[name=\'country_id\']').trigger('change');
+
+$(function(){
+	$('[name=city]').val('[empty]');
+});
 //--></script>

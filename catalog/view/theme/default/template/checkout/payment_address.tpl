@@ -42,31 +42,7 @@
         <input type="text" name="company" value="" placeholder="<?php echo $entry_company; ?>" id="input-payment-company" class="form-control" />
       </div>
     </div>
-    <div class="form-group required">
-      <label class="col-sm-2 control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
-      <div class="col-sm-10">
-        <input type="text" name="address_1" value="" placeholder="<?php echo $entry_address_1; ?>" id="input-payment-address-1" class="form-control" />
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-sm-2 control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
-      <div class="col-sm-10">
-        <input type="text" name="address_2" value="" placeholder="<?php echo $entry_address_2; ?>" id="input-payment-address-2" class="form-control" />
-      </div>
-    </div>
-    <div class="form-group required">
-      <label class="col-sm-2 control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
-      <div class="col-sm-10">
-        <input type="text" name="city" value="" placeholder="<?php echo $entry_city; ?>" id="input-payment-city" class="form-control" />
-      </div>
-    </div>
-    <div class="form-group required">
-      <label class="col-sm-2 control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
-      <div class="col-sm-10">
-        <input type="text" name="postcode" value="" placeholder="<?php echo $entry_postcode; ?>" id="input-payment-postcode" class="form-control" />
-      </div>
-    </div>
-    <div class="form-group required">
+	<div class="form-group required">
       <label class="col-sm-2 control-label" for="input-payment-country"><?php echo $entry_country; ?></label>
       <div class="col-sm-10">
         <select name="country_id" id="input-payment-country" class="form-control">
@@ -79,6 +55,30 @@
           <?php } ?>
           <?php } ?>
         </select>
+      </div>
+    </div>
+    <div class="form-group required">
+      <label class="col-sm-2 control-label" for="input-payment-address-1"><?php echo $entry_address_1; ?></label>
+      <div class="col-sm-10">
+        <input type="text" name="address_1" value="" placeholder="<?php echo $entry_address_1; ?>" id="input-payment-address-1" class="form-control" />
+      </div>
+    </div>
+    <div class="form-group" style="display:none;">
+      <label class="col-sm-2 control-label" for="input-payment-address-2"><?php echo $entry_address_2; ?></label>
+      <div class="col-sm-10">
+        <input type="text" name="address_2" value="" placeholder="<?php echo $entry_address_2; ?>" id="input-payment-address-2" class="form-control" />
+      </div>
+    </div>
+    <div class="form-group required" style="display:none;">
+      <label class="col-sm-2 control-label" for="input-payment-city"><?php echo $entry_city; ?></label>
+      <div class="col-sm-10">
+        <input type="text" name="city" value="" placeholder="<?php echo $entry_city; ?>" id="input-payment-city" class="form-control" />
+      </div>
+    </div>
+    <div class="form-group required" style="display:none;">
+      <label class="col-sm-2 control-label" for="input-payment-postcode"><?php echo $entry_postcode; ?></label>
+      <div class="col-sm-10">
+        <input type="text" name="postcode" value="" placeholder="<?php echo $entry_postcode; ?>" id="input-payment-postcode" class="form-control" />
       </div>
     </div>
     <div class="form-group required">
@@ -340,4 +340,8 @@ $('#collapse-payment-address select[name=\'country_id\']').on('change', function
 });
 
 $('#collapse-payment-address select[name=\'country_id\']').trigger('change');
+
+$(function(){
+	$('[name=city]').val('[empty]');
+});
 //--></script>

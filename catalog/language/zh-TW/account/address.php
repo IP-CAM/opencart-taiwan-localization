@@ -12,8 +12,8 @@ $_['text_delete']       = '您的地址已刪除';
 $_['text_empty']           = '您的帳戶沒有地址。';
 
 // Entry
-$_['entry_firstname']   = '姓氏';
-$_['entry_lastname']    = '名字';
+$_['entry_firstname']   = '名字';
+$_['entry_lastname']    = '姓氏';
 $_['entry_company']     = '公司名稱';
 $_['entry_company_id']  = '公司註冊號';
 $_['entry_tax_id']      = '公司統編';
